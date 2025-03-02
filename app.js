@@ -1,32 +1,24 @@
-let totalExpenses = 0;
+/*
+function abc(){
 
-function addExpense() {
-    let name = document.getElementById("expense-name").value;
-    let amount = parseFloat(document.getElementById("expense-amount").value);
-    if (name === "" || isNaN(amount) || amount <= 0) {
-        alert("Please enter valid expense details.");
-        return;
-    }
-    
-    let expenseList = document.getElementById("expense-list");
-    let expenseItem = document.createElement("div");
-    expenseItem.classList.add("expense-item");
-    
-    expenseItem.innerHTML = `
-        <span>${name}: $${amount.toFixed(2)}</span>
-        <button class="delete-btn" onclick="deleteExpense(this, ${amount})">Delete</button>
-    `;
-    
-    expenseList.appendChild(expenseItem);
-    totalExpenses += amount;
-    document.getElementById("total-expenses").innerText = totalExpenses.toFixed(2);
-    
-    document.getElementById("expense-name").value = "";
-    document.getElementById("expense-amount").value = "";
+
+      document.getElementById('ttt').innerHTML = 'Hello world'
+      document.getElementById('anc').style.display = 'none'
+    //document.getElementById('anc').innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex officia nobis modi? Eius ipsum aliquid, fuga mollitia amet beatae ducimus accusantium aut, distinctio fugiat ratione quo quia. Praesentium, rem laborum?'
+    //alert('Hello world')
+   // document.getElementById('abc').innerHTML = 'Hello world'
+
 }
 
-function deleteExpense(element, amount) {
-    element.parentElement.remove();
-    totalExpenses -= amount;
-    document.getElementById("total-expenses").innerText = totalExpenses.toFixed(2);
+//abc()
+
+*/
+
+function cooking(e){
+  document.getElementById('inp').value += e
+}
+
+function eq(){
+  var a = document.getElementById('inp')
+  a.value = eval(a.value)
 }

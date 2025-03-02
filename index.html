@@ -1,91 +1,61 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        .square-inputs input {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background: #218838;
-        }
-        .expense-list {
-            margin-top: 20px;
-            text-align: left;
-        }
-        .expense-item {
-            background: #ddd;
-            padding: 10px;
-            margin: 5px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 5px;
-        }
-        .delete-btn {
-            background: red;
-            color: white;
-            border: none;
-            padding: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .total {
-            margin-top: 15px;
-            font-weight: bold;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Expense Tracker</h2>
-        <div class="square-inputs">
-            <input type="text" id="expense-name" placeholder="Expense Name">
-            <input type="number" id="expense-amount" placeholder="Amount">
+    <div>
+        <div>
+            <h1>Calculator</h1>
         </div>
-        <button onclick="addExpense()">Add Expense</button>
-        <div class="expense-list" id="expense-list"></div>
-        <div class="total">Total Expenses: $<span id="total-expenses">0</span></div>
+        <div>
+            <input readonly type="" name="" id="inp">
+        </div>
+        <br>
+        <div>
+            <button>Clear all</button>
+            <button>Clear</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="cooking(9)">9</button>
+            <button onclick="cooking(8)">8</button>
+            <button onclick="cooking(7)">7</button>
+            <button onclick="cooking('+')">+</button>
+        </div>
+        <div>
+            <button onclick="cooking(4)">4</button>
+            <button onclick="cooking(5)">5</button>
+            <button onclick="cooking(6)">6</button>
+            <button onclick="cooking('-')">-</button>
+        </div>
+        <div>
+            <button onclick="cooking(3)">3</button>
+            <button onclick="cooking(2)">2</button>
+            <button onclick="cooking(1)">1</button>
+            <button onclick="cooking('/')">/</button>
+        </div>
+        <div>
+            <button onclick="cooking(0)">0</button>
+            <button onclick="cooking('X')">X</button>
+            <button onclick="eq()">=</button>
+            <button >%</button>
+        </div>
     </div>
-        
+    <!--
+    <p id="abc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex officia nobis modi? Eius ipsum aliquid, fuga mollitia amet beatae ducimus accusantium aut, distinctio fugiat ratione quo quia. Praesentium, rem laborum?
+        <p id="ttt">
+
+        </p>
+        <a id="anc" onclick="abc()" href="#">Read more</a>
+
+    </p> -->
+
+  <!-- <button onclick="abc()">Click me</button> -->
+
     <script src="app.js"></script>
 </body>
 </html>
-
-   
-
-
-    
